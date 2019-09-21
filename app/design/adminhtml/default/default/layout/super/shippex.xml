@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+    <adminhtml_point_index>
+        <reference name="content">
+            <block type="shippex/adminhtml_point" name="point"/>
+        </reference>
+    </adminhtml_point_index>
+</layout>

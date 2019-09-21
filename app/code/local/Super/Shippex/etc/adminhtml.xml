@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <shippex module="shippex">
+            <title>Shippex Pickup Points</title>
+            <sort_order>100</sort_order>
+            <children>
+                <shippexgrid module="shippex">
+                    <title>Manage Points</title>
+                    <sort_order>0</sort_order>
+                    <action>*/point</action>
+                </shippexgrid>
+            </children>
+        </shippex>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <shippex translate="title" module="shippex">
+                        <title>Shippex Pickup Points</title>
+                        <sort_order>1000</sort_order>
+                        <children>
+                            <shippexgrid translate="title">
+                                <title>Manage Points</title>
+                            </shippexgrid>
+                        </children>
+                    </shippex>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
